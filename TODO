@@ -1,0 +1,2 @@
+Create a 'random writer' to produce random 'dreams'.
+Using a markov chain, predict which word will follow a given word. Repeate until an entire dream has been written.
