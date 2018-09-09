@@ -12,4 +12,4 @@ def get_dreams():
     return dreams
 
 if __name__ == "__main__":
-    print get_dreams()
+    print(get_dreams())

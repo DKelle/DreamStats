@@ -12,4 +12,4 @@ for line in lines:
 #print out the top 50 words used
 sorted_map = list(reversed(sorted(word_count_map.items(), key=operator.itemgetter(1))))
 for i in range(50):
-    print sorted_map[i]
+    print(sorted_map[i])

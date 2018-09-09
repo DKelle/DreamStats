@@ -19,4 +19,4 @@ if __name__ == "__main__":
     with open('dreams_copy.txt', 'r') as f:
         lines = f.readlines()
         dates = get_day_lines(lines)
-        print len(dates)
+        print(len(dates))

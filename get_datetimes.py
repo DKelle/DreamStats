@@ -13,15 +13,15 @@ def get_datetimes():
         try:
             datetimes.append(datetime.strptime(date, '%A, %B %d, %Y'))
         except Exception as e:
-            print 'Hit exception while converting the following date: {}'.format(date)
-            print e
+            print('Hit exception while converting the following date: {}'.format(date))
+            print(e)
 
     return datetimes
 
 def main():
     dates = get_datetimes()
     for d in dates:
-        print d
+        print(d)
 
 if __name__ == "__main__":
     main()
