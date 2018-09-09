@@ -44,7 +44,7 @@ def generate_words(seed, next_word_dict, number_to_generate, anchor_len, dreams)
     count = 0
     while not done:
         count = count + 1
-        if seed not in next_word_dict:
+        while seed not in next_word_dict:
             # This seed is not in the next_word_dict
             # probably means that this was the last word in a dream
             # End this sentance, and start a new one
@@ -80,11 +80,11 @@ if __name__ == "__main__":
 
     # Now that we have our list of probable next words, pick a seed
     seed = get_seed(dreams, anchor_len)
-    print 'seed is ' + str(seed)
 
     # Use the seed to start generating the next words
     random_dream = generate_words(seed, next_word_dict, 100, anchor_len, dreams)
 
+    # Write results to a file
     with open('random_dream.txt', 'w') as f:
         f.write(random_dream)
     print(random_dream)

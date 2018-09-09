@@ -1,2 +1,6 @@
-Create a 'random writer' to produce random 'dreams'.
-Using a markov chain, predict which word will follow a given word. Repeate until an entire dream has been written.
+TODO:
+    Rewrite the dream frequency graph - it's broken rn
+    Re write 'get_dates' or whatever to return datetimes
+DONE:
+    Create a 'random writer' to produce random 'dreams'.
+    Using a markov chain, predict which word will follow a given word. Repeate until an entire dream has been written.
